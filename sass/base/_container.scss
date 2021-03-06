@@ -1,8 +1,45 @@
+// .container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+//     /* padding-bottom: 0; */
+// }
+
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    /* padding-bottom: 0; */
+    width: 100%;
+    padding: 0 15px;
     
+    .header & {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+        margin: 0 auto;
+       
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        .header & {
+            display: flex;
+            align-items: center;
+        }   
+    }
+   
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px; 
+            
+    }
 }

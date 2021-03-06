@@ -1,8 +1,8 @@
 .logo {
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.16;
     /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--logo-web-color);
@@ -10,15 +10,39 @@
     &-web {
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
+    font-size: 24px;
+    line-height: 1.16;
     /* identical to box height */
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
     color: var(--accent-color);
     font-family: Raleway;
 }
     &.link {
-   padding-top: 25px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo{
+        &.link {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+    font-size: 26px;
+    line-height: 1.17;
+    &-web {
+     font-size: 26px;
+    line-height: 1.17;   
+    }
+    &.link {
+   padding-top: 24px;
    padding-bottom: 24px;
+    }
     }
 }
