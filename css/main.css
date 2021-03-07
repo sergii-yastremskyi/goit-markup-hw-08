@@ -570,6 +570,9 @@ l to box height, or 187% */
     height: 40px;
   }
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 101%;
     height: 100%;
     position: fixed;
@@ -592,9 +595,6 @@ l to box height, or 187% */
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--subtitle-font-color);
-  }
-  .mobile-menu-list {
-    margin-bottom: 302px;
   }
   .mobile-menu-item:not(:last-child), .mobile-contact-item:not(:last-child) {
     margin-bottom: 32px;

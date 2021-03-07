@@ -34,6 +34,9 @@ transition-property: fill;
     height: 40px;  
 }
     .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     width: 101%;
     height: 100%;
    // max-width: 480px;
@@ -62,7 +65,7 @@ transition-property: fill;
     color: var(--subtitle-font-color);
     }
     &-menu-list {
-        margin-bottom: 302px;
+        //margin-bottom: 302px;
     }
     &-menu-item:not(:last-child), &-contact-item:not(:last-child){
         margin-bottom: 32px;
