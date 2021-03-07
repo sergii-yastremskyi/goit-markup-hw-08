@@ -56,7 +56,7 @@
             </ul>
             <ul class="mobile-contact-list list">
                 <li class="mobile-contact-item">
-                    <a class="mobile-contact-tel link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                    <a class="mobile-contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
                 <li class="mobile-contact-item">
                     <a href="mailto:info@devstudio.com" class="mobile-contact-mail link">info@devstudio.com</a>
@@ -82,7 +82,7 @@
     </header>
     <main>
         <!--Секция Hero-->
-        <!-- <section class="hero">
+        <section class="hero">
             
             <div class="container">
             <h1 class="hero-headline">Эффективные решения для вашего бизнеса</h1>
@@ -90,10 +90,10 @@
             <button data-modal-open class="modal-button" type="button">Заказать услугу</button>
             </div>    
              </div>    
-        </section> -->
+        </section>
        
         <!--секция преимущества-->
-        <!-- <section class="advantages">
+        <section class="advantages section-padding">
             <div class="container">
                 <h2 class="visually-hidden">Web Studio</h2>
                 <ul class="advantages-list list">
@@ -135,9 +135,11 @@
                 </li>
                 </ul>      
             </div>      
-        </section> -->
-        <!--секция чем мы занимаемся-->
-        <!-- <section class="what-we-do">
+        </section> 
+      
+        <!-- секция чем мы занимаемся -->
+        
+        <section class="what-we-do">
              <div class="what-we-do-cards container ">
                  <h2 class="what-we-do-headline">Чем мы занимаемся</h2>
                      <ul class="what-we-do-list list">
@@ -158,15 +160,22 @@
                         </li>                
                      </ul>
             </div>
-        </section> -->
+        </section> 
         <!--секция Наша команда-->
-        <!-- <section class="our-team-section">
+     <section class="our-team-section section-padding">
             <div class="our-team container">
                  <h2 class="our-team-headline">Наша команда</h2>
                 <ul class="our-team-list list">
                     <li class="our-team-item">
                         
-                            <img class="our-team-img" width="270" src="./images/igor.jpg" alt="Игорь Демьяненко">
+                             <picture>
+                                <source media="(min-width: 1200px)" srcset="./images/igor-desktop.jpg 1x, ./images/igor-desktop@2x.jpg 2x"/>
+                                <source  media="(min-width: 768px)" srcset="./images/igor-tablet.jpg 1x, ./images/igor-tablet@2x.jpg 2x"/>
+                                <source media="(min-width: 480px)" srcset="./images/igor-mobile.jpg 1x, ./images/igor-mobile@2x.jpg 2x"/>
+                           
+                                <img class="our-team-img" src="./images/igor-mobile.jpg" alt="Игорь Демьяненко" width="450" />
+                             </picture>
+
                         <div class="team-card">
                             <h3 class="our-team-name">Игорь Демьяненко</h3>
                             <p class="our-team-p">Product Designer</p> 
@@ -189,7 +198,13 @@
                     </li>
                     <li class="our-team-item">
                         
-                            <img class="our-team-img" width="270" src="./images/olga.jpg" alt="Ольга Репина">
+                            <picture>
+                               <source  media="(min-width: 1200px)" srcset="./images/olga-desktop.jpg 1x, ./images/olga-desktop@2x.jpg 2x"/>
+                               <source media="(min-width: 768px)" srcset="./images/olga-tablet.jpg 1x, ./images/olga-tablet@2x.jpg 2x"/>
+                                <source media="(min-width: 480px)" srcset="./images/olga-mobile.jpg 1x, ./images/olga-mobile@2x.jpg 2x"/>
+                             <img class="our-team-img"  src="./images/olga-mobile.jpg" alt="Ольга Репина"/>
+                           </picture>
+
                          <div class="team-card">
                             <h3 class="our-team-name">Ольга Репина</h3>
                             <p class="our-team-p">Frontend Developer</p>
@@ -210,9 +225,14 @@
                         </div>    
                     </li>
                         <li class="our-team-item">
-                        
+                         <picture>
+                          <source  media="(min-width: 1200px)" srcset="./images/nikolay-desktop.jpg 1x, ./images/nikolay-desktop@2x.jpg 2x"/>
+                               <source media="(min-width: 768px)" srcset="./imagesnikolay-tablet.jpg 1x, ./images/nikolay-tablet@2x.jpg 2x"/>
+                                <source media="(min-width: 480px)" srcset="./images/nikolay-mobile.jpg 1x, ./images/nikolay-mobile@2x.jpg 2x"/>
+                      
                             <img  class="our-team-img" width="270" src="./images/nikolay.jpg" alt="Николай Тарасов">
-                        <div class="team-card">
+                       </picture>
+                            <div class="team-card">
                             <h3 class="our-team-name">Николай Тарасов</h3>
                             <p class="our-team-p">Marketing</p>  
                             <ul class="social-list list">
@@ -232,9 +252,16 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        
+                        <picture>
+                             <source  media="(min-width: 1200px)" srcset="./images/mihail-desktop.jpg 1x, ./images/mihail-desktop@2x.jpg 2x"/>
+                               <source media="(min-width: 768px)" srcset="./images/mihail-tablet.jpg 1x, ./images/mihail-tablet@2x.jpg 2x"/>
+                                <source media="(min-width: 480px)" srcset="./images/mihail-mobile.jpg 1x, ./images/mihail-mobile@2x.jpg 2x"/>
+                      
                              <img class="our-team-img" width="270" src="./images/mihail.jpg" alt="Михаил Ермаков">
-                        <div class="team-card">                             <h3 class="our-team-name">Михаил Ермаков</h3>
+                        </picture>
+                        
+                             <div class="team-card">                        
+                                 <h3 class="our-team-name">Михаил Ермаков</h3>
                             <p class="our-team-p">UI Designer</p>  
                             <ul class="social-list list">
                             <li class="social-list-item"><a class="social-list-link" href=""><svg class="social-list-icon">
@@ -254,8 +281,8 @@
                     </li>
             </ul>
             </div>
-        </section> -->
-        <!-- <section class="clients">
+        </section>
+        <section class="clients section-padding">
             <div class="container">
                 <h2 class="clients-headline">Наши клиенты</h2>
                 <ul class="clients-list list">
@@ -299,13 +326,12 @@
 
 
             </div>
-            
+        </section>
 
-        </section> -->
     </main>
     <!--футер-->
-    <!-- <footer class="footer">
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="container">
             <div class="footer-left">
                 <a class="logo-studio-footer link" href="./index.html"><span class="logo-web">Web</span>Studio</a> 
                 <address class="adress">
@@ -335,6 +361,7 @@
              </div>
              <div class="form-footer">
                  <form action="#">
+                     <div class="footer-wraper">
                      <p class="footer-call">подпишитесь на рассылку</p>
                      <input  name="user-e-mail" type="email" required class="input-footer" placeholder="E-mail">
                      <button type="submit" class="footer-button">
@@ -344,12 +371,13 @@
                                 </svg>
                             </span>
                         </button>
+                    </div>
                  </form>
              </div>
         </div>
-    </footer> -->
+    </footer>
  
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <div class="modal-close">
             <button data-modal-close class="modal-cross-link"> 
@@ -411,7 +439,7 @@
    
     </div>
     
-</div> -->
+</div>
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>
 </body>
