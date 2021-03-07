@@ -48,6 +48,13 @@
 
   
     &-headline {
+      @media screen and (max-width: 768px) {
+      & {
+      text-align: center;
+      }
+      }
+          
+
     font-style: normal;
     font-weight: bold;
     font-size: 14px;

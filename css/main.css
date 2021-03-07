@@ -980,6 +980,12 @@ l to box height, or 187% */
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .advantages-headline {
+    text-align: center;
+  }
+}
+
 .advantages-paragraph {
   font-style: normal;
   font-weight: normal;
